@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#">Andrei Stavar</a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#myCv">My Cv</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="tab-container">
+
+    <!------------------ Section HomePage --------------------->
+
+    <section id="home">
+      <video autoplay muted loop id="myVideo" width="100%">
+        <source src="/video/video.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="homepage-content">
+        <h1>Hello! 😊</h1>
+        <p>
+          My name is Andrei Stavar and welcome to my personal CV page. Here
+          you can see most of my work done so far and the level of hunger to
+          become the best. Enjoy!
+        </p>
+        <button id="myBtn" onclick="myVideo()">Pause</button>
+        <a href="#about"><button class="second-button" href="#about">Let's explore!</button></a>
+      </div>
+    </section>
+
+    <!------------------ Section About --------------------->
+
+    <section id="about">
+      <h1 class="title-about">Nice to meet you!</h1>
+      <div class="about-card">
+        <div class="card-img">
+          <img src="img/profile.picture.v2.jpg" class="responsive-img" alt="">
+        </div>
+        <div class="card-details">
+          <h3>Hi, I am Andrei Stavar</h3>
+          <h4>Front end Developer</h4>
+
+          <li>Age: 26</li>
+          <li>Address: Stradela Voinesti nr.23</li>
+          <li>E-mail: andrei_stavar1412@yahoo.com</li>
+          <li>Phone: 0743872018</li>
+          <p>Please try the next button:</p>
+          <button class="btn" onclick="typeWriter()">Try it</button>
+        </div>
+        <div class="card-description">
+          <p id="demo"></p>
+        </div>
+      </div>
+    </section>
+
+      <!------------------ Section Skills--------------------->
+
+    <section id="skills">
+      <h1 class="title-skills">Professional Skills</h1>
+      <div class="skills-card">
+        <div class="col-1">
+          <h4>Here are some statistic of my knowledge that i have learned so far:</h4>
+          <label for="disk_c">HTML</label>
+          <meter id="disk_c" value="8.5" min="0" max="10"></meter> 80%<br>
+
+          <label for="disk_d">CSS</label>s
+          <meter id="disk_d" value="0.6"></meter> 65%<br>
+
+          <label for="disk_c">Javascript</label>
+          <meter id="disk_c" value="7" min="0" max="10"></meter> 70%<br>
+
+
+
+          <label for="disk_d">OOP in JS</label>
+          <meter id="disk_d" value="0.5"></meter> 50%<br>
+
+          <label for="disk_c">ES6</label>
+          <meter id="disk_c" value="6" min="0" max="10"></meter> 80%<br>
+
+          <label for="disk_d">React</label>
+          <meter id="disk_d" value="0.1"></meter> 20%
+        </div>
+        <div class="col-2">
+          <img src="/img/arrow.jpg" class="responsive-img" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!------------------ Section Portofolio--------------------->
+  
+    <section id="portofolio">
+      <h1 class="title-portofolio">Portofolio</h1>
+         <div class="portofolio-main-card">
+        <div class="card1">
+          <div class="Rock_paper_scissors">
+            <div class="choice">
+              <span id="user-score">0</span>
+              <span id="score">:</span>
+              <span id="computer-score">0</span>
+            </div>
+            <br />
+
+            <button id="rock" class="selection">✊</button>
+            <button id="p" class="selection">✋</button>
+            <button id="s" class="selection">✌</button>
+
+            <p id="display">Give it a try</p>
+          </div>
+        </div>
+
+        <div class="weather">
+          <div class="card2">
+            <h3 id="city">Current weater in</h3>
+            <img src="" id="img" class="responsive-img" alt="" data-weather-icon />
+            <p>
+              Min.
+              <span id="tempmin"></span>
+              / Max.
+              <span id="tempmax"></span>
+              C
+            </p>
+
+            <p>
+              Current temperature:
+              <strong id="temp"></strong>
+              &deg; , feels like:
+              <strong id="feels__like"></strong>
+            </p>
+            <div data-temperature-toggle>
+              <p>
+                <label>
+                  Celcius
+                  <input type="radio" name="temp" value="Celsius" />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Fahrenheit
+                  <input type="radio" name="temp" value="Fahrenheit" />
+                </label>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+ </section>
+
+<!------------------ Section Hobbies--------------------->
+
+  <section id="hobbies">
+    <h1 class="title-hobbies">Hobbies:</h1>
+    <div class="card-hobbies">
+      <div class="iframe-card">
+        <iframe width="360" height="215" src="https://www.youtube.com/embed/JId3fWuXOTQ" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen class="responsive-img"></iframe>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem enim ullam ducimus unde, aliquam expedita,
+          consequatur iusto sed similique totam fugit, iste corporis. Minima facilis ad ratione modi, molestiae harum!
+        </p>
+      </div>
+      <div class="iframe-card-2">
+        <iframe width="360" height="215" src="https://www.youtube.com/embed/0qo78R_yYFA" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen class="responsive-img"></iframe>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus numquam ducimus laudantium laborum? Iste
+          repellat facere suscipit quod illum. Nostrum veniam enim itaque quis, nisi pariatur dolorum commodi non ab.
+        </p>
+      </div>
+      <div class="iframe-card-3">
+        <iframe width="360" height="215" src="https://www.youtube.com/embed/yz8ymvqUMrU" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus numquam ducimus laudantium laborum? Iste
+          repellat facere suscipit quod illum. Nostrum veniam enim itaque quis, nisi pariatur dolorum commodi non ab.
+        </p>
+      </div>
+      <div class="iframe-card-3">
+        <iframe width="360" height="215" src="https://www.youtube.com/embed/Vu8XG9UxtOQ" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus numquam ducimus laudantium laborum? Iste
+          repellat facere suscipit quod illum. Nostrum veniam enim itaque quis, nisi pariatur dolorum commodi non ab.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+<!------------------ Section My CV --------------------->
+
+  <section id="myCv">
+    <div class="main-card">
+      <div class="header">
+        <div class="header-container">
+          <div class="header-row-1">
+            <div class="details">
+              <h1>Andrei Stavar</h1>
+              <h2>Front end developer</h2>
+              <a href="andrei_stavar1412@yahoo.com">andrei_stavar1412@yahoo.com</a>
+              <p>0743872018</p>
+            </div>
+            <div class="img">
+              
+              <img src="/img/photo.jpg"  width="230px" height="300px" alt="" class="responsive-img" />
+            </div>
+          </div>
+          <div class="header-row-2">
+            <h3>Profile</h3>
+            <p>
+              Innovative, task-driver professional with 1+ year exeperience in web
+              design an development across diverse indrustries. Equipped with a
+              record of success in consistently indentifying and prodviding the
+              technological needs of companies through ingenious
+              innovation.Proficient in developing databases, creating user
+              interfaces, writing and testing codes, troubleshooting
+              simple/complex issues, and implementing new features based on user
+              feedback
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="body">
+        <h3>Skills</h3>
+        <div class="skills">
+          <div class="skills-container">
+            <div class="web-desing">
+              <h5>Web Design</h5>
+              <p>
+                Assertively exploit wireless initiatives rather than synergistic
+                core competencies.
+              </p>
+            </div>
+            <div class="interface-design">
+              <h5>Interface Design</h5>
+              <p>
+                Credibly streamline mission-critical value with multifunctional
+                functionalities.
+              </p>
+            </div>
+            <div class="project-direction">
+              <h5>Project Direction</h5>
+              <p>
+                Proven ability to lead and manage a wide variety of design and
+                development projects in team and independent situations.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tehnical">
+          <h3>Tehnical</h3>
+          <li>XHTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>React</li>
+          <li>Node</li>
+          <li>Windows</li>
+        </div>
+        <div class="experiance">
+          <h3>Experience</h3>
+          <div class="uber">
+            <h3>Uber</h3>
+            <h4>Driver</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, earum eum. Eius adipisci, porro numquam repellat
+              laudantium voluptatum cupiditate praesentium, ipsam sit explicabo,
+              consequatur ipsa voluptatibus quaerat dolorem. Distinctio,
+              debitis.
+            </p>
+          </div>
+          <div class="tinseltown">
+            <h3>Tinseltown</h3>
+            <h4>Assistent manager</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, earum eum. Eius adipisci, porro numquam repellat
+              laudantium voluptatum cupiditate praesentium, ipsam sit explicabo,
+              consequatur ipsa voluptatibus quaerat dolorem. Distinctio,
+              debitis.
+            </p>
+          </div>
+          <div class="business-4-all">
+            <h3>Busines 4 all</h3>
+            <h4>Accounting</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, earum eum. Eius adipisci, porro numquam repellat
+              laudantium voluptatum cupiditate praesentium, ipsam sit explicabo,
+              consequatur ipsa voluptatibus quaerat dolorem. Distinctio,
+              debitis.
+            </p>
+          </div>
+          <div class="amazon">
+            <h3>Amazon</h3>
+            <h4>Accounting</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, earum eum. Eius adipisci, porro numquam repellat
+              laudantium voluptatum cupiditate praesentium, ipsam sit explicabo,
+              consequatur ipsa voluptatibus quaerat dolorem. Distinctio,
+              debitis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          Andrei Stavar &mdash;
+          <a href="andrei_stavar1412@yahoo.com">andrei_stavar1412@yahoo.com</a>
+          &mdash; 0743872018
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="contact">
+    <div class="thanks">
+      <div id="succesMessage" class="succes-message hide">
+        <div class="banner-contact">
+          <span id="spanFirstName"></span><br />
+          <a href="#home"><button class="btn-success">Thank you</button></a>
+        </div>
+      </div>
+      <div class="form-container">
+        <h1 class="title-contact">Contact details</h1>
+        <div class="form-box">
+          <div class="form-details">
+            
+            <p class="form-text">
+             Make sure you complete the required fields!
+            </p>
+            <input id="firstName" type="text" name="firstName" value="" placeholder="First Name" class="name" />
+            <br />
+            <input id="lastName" type="text" name="lastName" value="" placeholder="Last Name" class="name" />
+            <br />
+            <label for="" id="gender">Gender</label>
+
+            <input type="radio" id="male" name="gender" value="male" />M
+
+            <input type="radio" id="female" name="gender" value="female" />F
+            <br />
+            <textarea name="" id="textarea" rows="4" cols="50"> </textarea>
+            <br />
+
+            <button id="button-submit" class="btn-contact" onclick="handleClickSubmit()">
+              Submit
+            </button>
+          </div>
+          <div class="maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10851.968695020802!2d27.581124976323505!3d47.158007699999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cafb8385e01959%3A0xe7e5d1b7395595d2!2sPalas%20Mall!5e0!3m2!1sro!2sro!4v1619419886858!5m2!1sro!2sro"
+              class="iframe" width="490" height="365" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <footer id="sm-footer">
+    <a href="https://facebook.com" class="fab fa-facebook"></a>
+    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+
+    <a href="https://github.com"> <i class="fab fa-github"></i></a>
+
+    <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+  </footer>
+
+
+
+</body>
+
+</html>
